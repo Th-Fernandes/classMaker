@@ -1,3 +1,33 @@
 {
-  "extends": "next/core-web-vitals"
-}
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended"
+  ],
+
+  "settings": {
+    "linkComponents": [  
+      {
+        "name": "Link",
+        "linkAttribute": "href"
+      }
+    ]
+  },
+  
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/boolean-prop-naming": ["error", { "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+" }],
+    "react/function-component-definition": [2, { "namedComponents": "function-declaration" }],
+    "react/hook-use-state": ["error" , { "allowDestructuredState": true }],
+    "react/jsx-closing-bracket-location": 2,
+    "react/jsx-closing-tag-location": 2,
+
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      2
+    ]
+  }
+}   
