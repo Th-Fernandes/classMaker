@@ -1,5 +1,5 @@
 import { Mulish } from 'next/font/google';
-import '../assets/globals.css';
+import '@/assets/globals.css';
 
 const mulish = Mulish({ subsets: ['latin']});
 
