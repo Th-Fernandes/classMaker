@@ -12,7 +12,7 @@ export function ActionsSection() {
             <li className='mb-4'>
               <Link href="/login" className='block'>
                 <button 
-                  id="loginRedirect" 
+                  data-cy="loginRedirectButton" 
                   type="button" 
                   className='w-full bg-brand-700 rounded-lg text-white-400 text-lg py-1 md:w-[354px]'
                 >
@@ -24,7 +24,7 @@ export function ActionsSection() {
             <li>
               <Link href="/tutorial" className='block'>
                 <button 
-                  id="tutorialRedirect" 
+                  data-cy="tutorialRedirectButton" 
                   type="button" 
                   className='w-full border border-brand-700 rounded-lg text-lg py-1 sm:w-[354px]'
                 >
