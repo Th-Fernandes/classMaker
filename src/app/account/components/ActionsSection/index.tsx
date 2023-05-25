@@ -4,8 +4,8 @@ import Link from 'next/link';
 export function ActionsSection() {
   return (
     <>
-      <section className="min-h-screen flex justify-center items-center bg-account-bg md:bg-[url('/bg/account-page-desktop.png')] bg-no-repeat bg-cover">
-        <div className="flex flex-col justify-between items-center h-64 bg-white-400 px-4 py-8 rounded-lg min-w-[90%, 354px]">
+      <section className="min-h-screen flex justify-center items-center bg-[url('/bg/account-page.png')] bg-no-repeat bg-cover">
+        <div className="flex flex-col justify-between items-center gap-8 sm:gap-16 bg-white-400 px-4 py-16  rounded-lg min-w-[90%, 354px]">
           <Image src="/logo-dark-full.png" alt="classmaker logo" width={269} height={40} />
 
           <ul className="list-none w-full">
