@@ -16,14 +16,16 @@ module.exports = {
       },
 
       white: {
-        400: "#ffffff"
+        400: '#ffffff'
       },
 
       gray: {
-        400: '#838383'
+        50: '#eaeaea',
+        400: '##7C7C7C'
       },
 
-      warn: '#E44E5A'
+      red: '#E54510',
+      focus: '#B10BFF'
     },
 
     extend: {
@@ -35,10 +37,6 @@ module.exports = {
         },
         base: ['14px', '25px']
       },
-
-      backgroundImage: {
-        'tutorial-step-shadow': 'linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, #000000 73%);'
-      }
     },
   },
   plugins: [],
