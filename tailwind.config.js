@@ -18,10 +18,13 @@ module.exports = {
       white: {
         400: '#ffffff'
       },
+      black: {
+        400: '#000000',
+      },
 
       gray: {
         50: '#eaeaea',
-        400: '##7C7C7C'
+        400: '#7C7C7C'
       },
 
       red: '#E54510',
