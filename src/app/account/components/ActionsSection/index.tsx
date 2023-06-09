@@ -10,7 +10,7 @@ export function ActionsSection() {
 
           <ul className="list-none w-full">
             <li className='mb-4'>
-              <Link href="/login" className='block'>
+              <Link href="/account/login" className='block'>
                 <button 
                   data-cy="loginRedirectButton" 
                   type="button" 
