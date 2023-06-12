@@ -22,7 +22,7 @@ export function ActionsSection() {
             </li>
 
             <li>
-              <Link href="/tutorial" className='block'>
+              <Link href="/account/tutorial" className='block'>
                 <button 
                   data-cy="tutorialRedirectButton" 
                   type="button" 
