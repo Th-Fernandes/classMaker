@@ -1,8 +1,15 @@
-import { SignActionInput } from "@/components/signActionInput";
+import { SignActionInput } from "@/components/SignActionInput";
 
 describe('login input component', () => {
   beforeEach(() => {
-    cy.mount(<SignActionInput id="emailInputLogin" label="E-mail" />);
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    cy.mount(
+      <SignActionInput 
+        id="emailInputLogin" 
+        label="E-mail" 
+        validation={{regex: emailRegex , message: "Lorem ipsum"}}
+      />);
   });
   
   it('should highlight on focus and loses it after blur', () => {
