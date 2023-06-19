@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { SignActionInput } from "@/components/SignActionInput";
+import { DarkButton } from "@/components/DarkButton";
 
 export function LoginForm() {
   return (
@@ -15,14 +16,10 @@ export function LoginForm() {
         validation={{regex: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/, message:'E-mail inválido'}}
       />
       <SignActionInput id="passwordInputLogin" type="password" label="Senha" validation={{regex: /.{8,}/, message: 'A senha deve conter ao menos 8 caracteres'}} />
-      
-      <button
-        className="w-full py-1 font-medium text-lg text-white-400 bg-brand-700 rounded-lg focus:outline focus:outline-2 focus:outline-focus" 
-        type="submit" 
-        data-cy="submitLoginData"
-      >
+
+      <DarkButton type="submit" data-cy="submitLoginData">
         <Link className="w-full h-full block" href="/home">Entrar na plataforma</Link>
-      </button>
+      </DarkButton>
     </form>
   );
 }
