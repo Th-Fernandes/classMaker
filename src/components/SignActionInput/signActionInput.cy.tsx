@@ -18,12 +18,15 @@ describe('login input component', () => {
       .and('have.class','focus:outline-2')
       .and('have.class','focus:outline-black-400');
     
-    // cy.get('[data-cy="emailLabel"]').should('have.css, color, #000000');
-    
     cy.get('[data-cy="emailInputLogin"]').type('user@gmail.com').blur()
       .should('have.class', 'border')
       .and('have.class', 'border-1')
       .and('have.class','border-gray-400');
-    // cy.get('[data-cy="emailLabel"]').should('have.css, color, #7C7C7C');
+  });
+
+  it('should apply invalid input error styles', () => {
+    cy.get('[data-cy="emailInputLogin"]').type('user@')
+      .should('have.class', 'focus:outline-red')
+      .and('have.class', 'border-red');
   });
 });
