@@ -30,7 +30,7 @@ export default function SignInPage() {
             validation={{regex: /.{8,}/, message: 'senha dave conter ao menos 8 caracteres'}}
           />
 
-          <DarkButton>
+          <DarkButton type="submit" data-cy="signInSubmitCredentials">
             <Link href="/home">asdad</Link>
           </DarkButton>
         </form>
