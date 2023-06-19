@@ -15,7 +15,7 @@ export function TutorialStepsSlider() {
     
     if(!hasAnotherStepToShow) {
       setIsPathLoading(true);
-      router.push('/home');
+      router.push('/account/signIn');
       return;
     }
     
