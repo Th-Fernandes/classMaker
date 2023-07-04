@@ -10,7 +10,7 @@ export function Header() {
   const screenWidth = React.useRef(window.innerWidth);
 
   return (
-    <header className="bg-brand-700 ">
+    <header className="bg-brand-700">
       <div className="flex justify-between items-center max-w-[1440px] p-4 md:px-8 mx-auto">
         <Image src="/logo-light-full.png" alt="classMaker logo" width={logoWidth} height={logoHeight}/>
 

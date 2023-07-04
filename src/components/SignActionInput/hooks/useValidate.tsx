@@ -1,3 +1,5 @@
+import React from "react";
+
 export function useValidateInput(regex: RegExp) {
   const [isTextContentValid, setIsTextContentValid] = React.useState<boolean>(true);
 
