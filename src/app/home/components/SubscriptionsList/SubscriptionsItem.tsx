@@ -22,7 +22,7 @@ export function SubscriptionsItem({title, tags}:Props) {
 
         </div>
 
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3" className="font-medium">{title}</Heading>
       </div>
       {/* TAGS */}
       <div className="flex gap-2 justify-center items-center">

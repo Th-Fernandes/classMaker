@@ -5,7 +5,7 @@ export function useRenderedTagsAmount() {
 
   const tagsAmount = windowWidth.current < 600 ? 1 : 2;
 
-  return {
-    tagsAmount
+  return { 
+    tagsAmount 
   };
 }
